@@ -1,4 +1,3 @@
-/* Using Rem for font might not be optimal, as it is based off the browser's default text settings. Maybe using vh or vw would be better? */
 
 body {
 
@@ -64,11 +63,13 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media only screen and (min-width: 600px){
 .nav-item {
     color: black;
     margin-left: 1vw;
     margin-right: 1vw;
     font-size: 1.33rem;
+}
 }
 
 .navbar {
@@ -85,7 +86,6 @@ h2 {
 
 /* CSS exclusive to the Take Action Screen */
 
-
 .skyPic {
     height: 100%;
     width: 100%;
@@ -93,6 +93,60 @@ h2 {
 
 .contentRow {
     margin-top: 10vh;
+}
+
+.learncomposting{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/composting.jpeg");
+	background-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.readfivepapers{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/fivepapers.jpeg");
+	background-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recyclingaz{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/recyclingaz.jpeg");
+	background-size: 125%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.dropoffcenters{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/dropoff.jpeg");
+	background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reusecenters{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/reuse.jpeg");
+	background-size: 125%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thriftshops{
+	width: 250px;
+    height: 250px;
+    background-image: url("images/thriftshops.jpeg");
+	background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greyBox {
@@ -108,9 +162,6 @@ h2 {
     margin-top: 2vh;
 }
 
-
-
-
 /* CSS exclusively for the Home Screen */
 
 .blogPosts {
@@ -122,6 +173,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     background-image: url("images/trash.png");
+	background-repeat: no-repeat;
 }
 
 
@@ -150,4 +202,20 @@ h2 {
 .date {
     font-weight: lighter;
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+.footer{
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*for mobile layout*/
+@media only screen and (max-width: 600px){
+.nav-item {
+    color: black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 2.33rem;
+}
 }
